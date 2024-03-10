@@ -1,0 +1,268 @@
+:root{
+    --main-purple: #e7317a;
+    --main-white: rgb(221, 220, 220);
+    --second-gray: #6c6c6a;
+    --main-black: rgb(22, 22, 22);
+    --secondary-purple: #db5389;
+ }
+
+body{
+    background-color: var(--main-black);
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    color: var(--main-white);
+    font-size: 1.25rem ;
+ }
+
+ a{
+    color: var(--secondary-purple);
+    text-decoration: none !important;
+ }
+
+ h2 {
+    color: var(--secondary-purple);
+}
+
+p {
+    margin: 5px 0;
+}
+
+
+ 
+
+ 
+
+ .nav_bar{
+    display: flex;
+    justify-content: center;
+    background-color: var(--second-gray);
+    width:100%;
+ }
+
+ .nav_bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .nav_bar li{
+    display: inline-block;
+    margin: 0 4rem;
+    background-color: var(--second-gray);
+    border-radius: 2rem;
+    font-size: 1.5rem !important;
+ }
+
+ .nav_bar li,.nav_bar a{
+   text-decoration: none;
+   color: var(--main-purple);
+   font-weight: bold;
+}
+
+.nav_bar li{
+    transition: all 0.5s ease 0s;
+}
+
+.nav_bar li,.nav_bar a{
+   transition: all 0.5s ease 0s;
+}
+
+
+.nav_bar li,.nav_bar a:hover{
+   color: var(--main-white);
+}
+
+
+
+ 
+
+
+
+ .cv {
+    display: flex;
+    flex-direction:column;
+    margin: 2rem 7rem ;
+    border-radius: 3rem;
+ }
+
+ .container{
+    padding: 2rem;
+ }
+
+ .cv_header {
+    text-align: center;
+}
+
+.cv_header h1{
+    color: var(--main-purple);
+}
+
+.cv_header p{
+    font-size: 1.25rem ;
+}
+
+.cv_item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding:  0 20% ;
+    background-color: var(--second-gray);
+    border-radius: 2rem;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.form_container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--second-gray);
+    margin: 5rem;
+    border-radius: 3rem;
+}
+
+.form_title{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.form_item{
+    margin: 2rem;
+    width: 50rem;
+    padding: 1.5rem;
+}
+.form_item label{
+    font-size: 1.25rem;
+}
+
+.form_item input{
+   width: 80%;
+   height:3rem;
+   border: none ;
+   border-radius:15px;
+   font-size: 100%;
+}
+
+.form_item_buttons{
+    text-align: center;
+}
+
+button{
+    margin: .25rem;
+    border: none;
+    background: var(--secondary-purple);
+    border-radius:10px ;
+    color: var(--main-white);
+    cursor: pointer;
+    height: 70px;
+    width:100px;
+    font-weight: 600;
+    
+}
+
+ button {
+    transition: all 0.5s ease 0s;
+}
+
+button:hover{
+    background: var(--main-white) ;
+    color:var(--secondary-purple);
+}
+
+
+.quiz_container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-gray);
+    align-items: center;
+    margin: 5rem;
+    border-radius: 3rem;
+}
+
+.quiz_container form div{
+    margin: 1rem;
+    width: 80%;
+}
+.quiz_header{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--secondary-purple);
+    border-radius: 3rem;
+}
+
+.quiz_header h2{
+    color: var(--main-white);
+}
+
+.quiz_question {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    margin: 1.25rem 0;
+}
+
+.quiz_question p{
+    font-weight: bold;
+    color: var(--secondary-purple);
+}
+
+.quiz_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.thx_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--second-gray);
+    align-items: center;
+    margin: 5rem;
+    border-radius: 3rem;
+}
+
+.thx_container div{
+    margin: 1rem;
+    
+}
+
+
+
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--second-gray);
+    border-radius: 5px;
+ }
+ footer ul{
+    list-style: none;
+ }
+ footer li{
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+ }
+ footer a{
+    color: var(--secondary-purple);
+ }
+
+ footer li{
+    transition: all 0.5s ease 0s;
+}
+
+
+footer li:hover{
+    background-color: var(--secondary-purple);
+}
+
+footer a:hover{
+    color: var(--main-white)
+}

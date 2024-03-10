@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/883f670b89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav_bar">
+        <ul class="nav_items">
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Login.html">Logout</a></li>
+        </ul>   
+</header>
+
+
+<div class="quiz_container">
+    <form id="quizForm" onsubmit="submitQuiz(event)">
+        <div class="quiz_header"><h2>HTML Beginner Quiz </h2></div>
+        
+        <div class="quiz_question">
+            <p>1. What does HTML stand for?</p>
+            <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+            <label><input type="radio" name="q1" value="b"> High Tech Markup Language</label>
+            <label><input type="radio" name="q1" value="c"> Hyper Transfer Markup Language</label>
+        </div>
+
+       
+
+        <div class="quiz_question">
+            <p>2. Which tag is used for creating a hyperlink?</p>
+            <label><input type="radio" name="q2" value="a"> &lt;link&gt;</label>
+            <label><input type="radio" name="q2" value="b"> &lt;a&gt;</label>
+            <label><input type="radio" name="q2" value="c"> &lt;href&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>3. What is the purpose of the &lt;head&gt; tag in HTML?</p>
+            <label><input type="radio" name="q3" value="a"> It defines the main content of the HTML document.</label>
+            <label><input type="radio" name="q3" value="b"> It contains metadata about the HTML document.</label>
+            <label><input type="radio" name="q3" value="c"> It specifies a header for the HTML document.</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>4. How do you create an ordered list in HTML?</p>
+            <label><input type="radio" name="q4" value="a"> &lt;ol&gt;</label>
+            <label><input type="radio" name="q4" value="b"> &lt;ul&gt;</label>
+            <label><input type="radio" name="q4" value="c"> &lt;li&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>5. What does the &lt;br&gt; tag do?</p>
+            <label><input type="radio" name="q5" value="a"> It creates a line break.</label>
+            <label><input type="radio" name="q5" value="b"> It creates a bold text.</label>
+            <label><input type="radio" name="q5" value="c"> It defines a block of code.</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>6. Which attribute is used to provide a short description for an image?</p>
+            <label><input type="radio" name="q6" value="a"> src</label>
+            <label><input type="radio" name="q6" value="b"> alt</label>
+            <label><input type="radio" name="q6" value="c"> title</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>7. What is the correct way to comment out code in HTML?</p>
+            <label><input type="radio" name="q7" value="a"> &lt;!-- This is a comment --&gt;</label>
+            <label><input type="radio" name="q7" value="b"> // This is a comment //</label>
+            <label><input type="radio" name="q7" value="c"> /* This is a comment */</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>8. Which tag is used for creating a table in HTML?</p>
+            <label><input type="radio" name="q8" value="a"> &lt;table&gt;</label>
+            <label><input type="radio" name="q8" value="b"> &lt;tr&gt;</label>
+            <label><input type="radio" name="q8" value="c"> &lt;td&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>9. What is the purpose of the &lt;meta charset="UTF-8"&gt; tag?</p>
+            <label><input type="radio" name="q9" value="a"> It defines a character set for the HTML document.</label>
+            <label><input type="radio" name="q9" value="b"> It specifies a link to an external stylesheet.</label>
+            <label><input type="radio" name="q9" value="c"> It creates a meta tag with the content "UTF-8".</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>10. What does CSS stand for?</p>
+            <label><input type="radio" name="q10" value="a"> Cascading Style Sheet</label>
+            <label><input type="radio" name="q10" value="b"> Computer Style Sheet</label>
+            <label><input type="radio" name="q10" value="c"> Creative Style Sheet</label>
+        </div>
+
+       
+
+
+        <div class="quiz_question">
+            <p>11. Which tags are used for creating a form in HTML?</p>
+            <label><input type="checkbox" name="q11" value="a"> &lt;form&gt;</label>
+            <label><input type="checkbox" name="q11" value="b"> &lt;input&gt;</label>
+            <label><input type="checkbox" name="q11" value="c"> &lt;select&gt;</label>
+            <label><input type="checkbox" name="q11" value="d"> &lt;button&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>12. Which tag is used for creating an image in HTML?</p>
+            <label><input type="checkbox" name="q12" value="a"> &lt;img&gt;</label>
+            <label><input type="checkbox" name="q12" value="b"> &lt;image&gt;</label>
+            <label><input type="checkbox" name="q12" value="c"> &lt;picture&gt;</label>
+            <label><input type="checkbox" name="q12" value="d"> &lt;src&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>13. Which attribute is used to define inline styles in HTML?</p>
+            <label><input type="checkbox" name="q13" value="a"> style</label>
+            <label><input type="checkbox" name="q13" value="b"> class</label>
+            <label><input type="checkbox" name="q13" value="c"> id</label>
+            <label><input type="checkbox" name="q13" value="d"> font-style</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>14. Which HTML tag is used to define the structure of an HTML document?</p>
+            <label><input type="checkbox" name="q14" value="a"> &lt;html&gt;</label>
+            <label><input type="checkbox" name="q14" value="b"> &lt;body&gt;</label>
+            <label><input type="checkbox" name="q14" value="c"> &lt;head&gt;</label>
+            <label><input type="checkbox" name="q14" value="d"> &lt;structure&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>15. Which tag is used to create a line break in HTML?</p>
+            <label><input type="checkbox" name="q15" value="a"> &lt;br&gt;</label>
+            <label><input type="checkbox" name="q15" value="b"> &lt;lb&gt;</label>
+            <label><input type="checkbox" name="q15" value="c"> &lt;newline&gt;</label>
+            <label><input type="checkbox" name="q15" value="d"> &lt;break&gt;</label>
+        </div>
+
+        <div class="quiz_question">
+            <p>16. What is the correct way to include an external stylesheet in HTML?</p>
+            <label><input type="checkbox" name="q16" value="a"> &lt;link rel="stylesheet" href="styles.css"&gt;</label>
+            <label><input type="checkbox" name="q16" value="b"> &lt;style src="styles.css"&gt;&lt;/style&gt;</label>
+            <label><input type="checkbox" name="q16" value="c"> &lt;stylesheet&gt;styles.css&lt;/stylesheet&gt;</label>
+            <label><input type="checkbox" name="q16" value="d"> &lt;css&gt;styles.css&lt;/css&gt;</label>
+        </div>
+
+
+      <div class="quiz_buttons"> <button type="submit" >Submit</button><button type="reset" onclick="resetQuiz()">Reset Choices</button> 
+    </form>
+
+
+    <script>
+        function submitQuiz(event) {
+            event.preventDefault();
+            alert("Quiz has been sent successfully!");
+            window.location.href = "Thankyou.html"
+        }
+
+        function resetQuiz() {
+            alert("The Quiz has been reset successfully!");
+        }
+    </script>
+
+
+</div>
+
+<footer class="Contact">
+    <ul>
+        <li><a href=""><i class="fa-solid fa-phone"></i>Phone : (+212) 6 49 23 91 98</a></li> 
+        <li><a href=""><i class="fa-solid fa-at"></i>Email : adilbhm2003@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/adil-bouhoum-b83129232/"><i class="fa-brands linkedin" id="profile-link"></i> Linkedin</a></li>
+    </ul>
+  </footer>
+</body>

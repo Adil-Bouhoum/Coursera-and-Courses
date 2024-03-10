@@ -1,0 +1,133 @@
+
+:root{
+    --margin-selected: 8px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 175%;
+}
+
+.container{
+    width: 100%;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.title{
+    float: right;
+    margin: 0;
+    width:40%;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 8px;
+    border: solid black 3px;
+    border-top: none;
+    border-right: none;
+    font-size: 125%;
+}
+
+.container .col-ls-3:nth-child(1) .title {
+    background-color: #ff0000; 
+    color: #ffffff;
+}
+
+.container .col-ls-3:nth-child(2) .title {
+    background-color: pink; 
+    color: rgb(0, 0, 0); 
+}
+
+.container .col-ls-3:nth-child(3) .title {
+    background-color: yellow;
+    color: black; 
+}
+
+
+
+.col-ls-3,.col-md-6{
+    border: solid black 4px;
+    background-color: rgb(112, 112, 196);
+    margin: 0 var(--margin-selected) var(--margin-selected) 0; 
+}
+
+@media(min-width:992px ){
+    .col-ls-3{
+        float: left;
+        width: calc(33% - var(--margin-selected));
+    }
+}
+
+@media (min-width:768px) and (max-width:991px){
+    .col-md-6{
+        float: left;
+        width: calc(50% - var(--margin-selected));
+    }
+    .col-ls-3:nth-child(3) {
+        width: calc(100% - var(--margin-selected));
+        clear: both; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(112, 112, 196);
+    border-radius: 5px;
+    clear: both;
+    margin-top: 5rem;
+   border: rgb(0, 0, 0) solid 4px;
+ }
+ footer ul{
+    list-style: none;
+ }
+ footer li{
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 1.25rem;
+ }
+ footer a{
+    color: rgb(255, 255, 255);
+ }
+
+ footer li{
+    transition: all 0.5s ease 0s;
+}
+
+
+footer li:hover{
+    background-color:rgb(255, 252, 252);
+    color: black;
+}
+
+footer a:hover{
+    color: var(--main-white)
+}
