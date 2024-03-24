@@ -1,0 +1,37 @@
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .food-item {
+      background-color: #7b7b7b;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .food-item h2 {
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .food-item p {
+      color: #000000;
+    }
+
+    div{
+        margin-bottom: 1.5rem;
+    }
