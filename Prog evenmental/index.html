@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Fruits</title>
+</head>
+<body>
+    <h1>Gestion des Fruits</h1>
+    <div id="output"></div>
+    <label for="fruit-input">Entrez le fruit que vous souhaitez acheter :</label>
+    <input type="text" id="fruit-input">
+    <button onclick="acheterFruit()">Acheter</button>
+    <script>
+        // Variable globale pour stocker la liste de fruits
+        let fruits = ["Pomme", "Raisin", "Banane", "Kiwi"];
+        
+        // Fonction pour afficher le résultat dans la page
+        function afficherResultat(resultat) {
+            document.getElementById("output").innerHTML += "<p>" + resultat + "</p>";
+        }
+
+        // Fonction pour acheter un fruit
+        function acheterFruit() {
+            // Récupérer le fruit demandé
+            let fruitDemande = document.getElementById("fruit-input").value;
+
+            // Vérifier si le fruit demandé est disponible.
+            let indexFruit = fruits.indexOf(fruitDemande);
+            if (indexFruit !== -1) {
+                afficherResultat("OK");
+                // Retirer le fruit du tableau.
+                fruits.splice(indexFruit, 1);
+            } else {
+                afficherResultat("Indisponible");
+                // Si le fruit n'existe pas, l'ajouter au tableau
+                fruits.push(fruitDemande);
+            }
+            
+            // Organiser les fruits alphabétiquement.
+            fruits.sort();
+            
+            // Inverser les éléments du tableau.
+            fruits.reverse();
+            
+            // Afficher le tableau mis à jour.
+            afficherResultat("<strong>Liste mise à jour des fruits :</strong>");
+            fruits.forEach(fruit => {
+                afficherResultat("- " + fruit);
+            });
+        }
+
+        // Au chargement de la page, afficher la liste de fruits actuelle
+        window.onload = function() {
+            afficherResultat("<strong>Fruits disponibles :</strong>");
+            fruits.forEach(fruit => {
+                afficherResultat("- " + fruit);
+            });
+        }
+    </script>
+</body>
+</html>
